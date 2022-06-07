@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>지하철 주변 지도</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <span>지키미</span>
+      </div>
+    </header>
+    <main id="sub_main">
+      <div
+        id="map"
+        style="width: 500px; height: 400px; margin: 0 auto; margin-top: 50px"
+      ></div>
+    </main>
+    <footer>
+      <a href="/">
+        <i class="bi bi-house"></i>
+        <span>메인화면으로</span>
+      </a>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e05f66977b36c9fa182727e4aacec178"
+    ></script>
+    <script>
+      var container = document.getElementById("map");
+      var options = {
+        center: new kakao.maps.LatLng(37.547913156943999, 127.07460202136932),
+        level: 3,
+      };
+
+      var map = new kakao.maps.Map(container, options);
+    </script>
+  </body>
+</html>

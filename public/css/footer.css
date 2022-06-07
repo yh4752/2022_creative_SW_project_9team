@@ -1,0 +1,38 @@
+/* 아래 홈 버튼 css */
+footer {
+  width: 100px;
+  height: 100px;
+  background-color: #1c364d;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px 15px 0px 0px;
+}
+
+footer a {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration-line: none;
+}
+
+footer a:hover {
+  color: antiquewhite;
+}
+
+footer a i {
+  font-size: 35px;
+}
+
+footer a span {
+  font-size: 13px;
+  padding-top: 10px;
+}

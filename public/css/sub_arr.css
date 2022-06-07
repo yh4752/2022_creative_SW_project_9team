@@ -1,0 +1,18 @@
+.sub_arr {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub_go {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_come {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
