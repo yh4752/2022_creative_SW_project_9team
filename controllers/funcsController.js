@@ -8,8 +8,8 @@ export const lift = (req, res) => {
   return res.render("lift");
 };
 
-export const wheel = (req, res) => {
-  res.render("wheel");
+export const sub_busy = (req, res) => {
+  res.render("sub_busy");
 };
 export const money = async (req, res) => {
   res.render("money");

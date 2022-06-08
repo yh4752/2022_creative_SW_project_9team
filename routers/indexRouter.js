@@ -1,7 +1,7 @@
 import express from "express";
 import {
   lift,
-  wheel,
+  sub_busy,
   money,
   sub_arrive,
   subway,
@@ -14,7 +14,7 @@ indexRouter.get("/", (req, res) => {
 });
 
 indexRouter.get("/lift", lift);
-indexRouter.get("/wheel", wheel);
+indexRouter.get("/sub_busy", sub_busy);
 indexRouter.get("/money", money);
 indexRouter.get("/sub_arrive", sub_arrive);
 indexRouter.get("/subway", subway);

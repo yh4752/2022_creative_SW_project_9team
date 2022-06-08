@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지하철 혼잡도 조회</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <span>지키미</span>
+      </div>
+    </header>
+    <main class="sub_main">
+      <section class="des">
+        <p>
+          현재 시간대를 고려하여 승차할 때나 하차할 때의 복잡도를 확인할 수
+          있습니다.
+        </p>
+      </section>
+      <section class="current_time">
+        <span>현재 시간은</span>
+        <span class="h1-clock"></span>
+      </section>
+      <section class="sub_state">
+        <div class="come_state">
+          <span>현재 하차시,</span>
+          <span></span>
+        </div>
+        <div class="out_state">
+          <span>현재 승차시,</span>
+          <span></span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="/">
+        <i class="bi bi-house"></i>
+        <span>메인화면으로</span>
+      </a>
+    </footer>
+    <script src="./js/sub_busy.js"></script>
+  </body>
+</html>

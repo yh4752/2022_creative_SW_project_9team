@@ -1,6 +1,7 @@
 @import "./footer.css";
 @import "./lift.css";
 @import "./sub_arr.css";
+@import "./sub_state.css";
 
 html,
 body {
@@ -37,7 +38,7 @@ main {
   display: flex;
   justify-content: space-around;
   height: 100px;
-  padding: 30px 0px;
+  padding: 30px 50px;
 }
 
 .first section {
