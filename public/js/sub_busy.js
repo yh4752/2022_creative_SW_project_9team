@@ -24,10 +24,10 @@ let come_list = [
   "free",
   "free",
   "free",
+  "normal",
+  "busy",
+  "busy",
   "free",
-  "busy",
-  "normal",
-  "free",
   "free",
   "normal",
   "normal",
@@ -39,6 +39,8 @@ let come_list = [
   "busy",
   "normal",
   "normal",
+  "normal",
+  "free",
 ];
 
 // 하차 리스트 (04시 ~ 21시)
@@ -46,19 +48,21 @@ let out_list = [
   "free",
   "free",
   "free",
+  "normal",
+  "busy",
+  "busy",
+  "busy",
+  "busy",
+  "busy",
+  "busy",
+  "normal",
+  "normal",
+  "normal",
+  "normal",
+  "busy",
+  "busy",
+  "normal",
   "free",
-  "busy",
-  "busy",
-  "busy",
-  "busy",
-  "busy",
-  "busy",
-  "normal",
-  "normal",
-  "normal",
-  "normal",
-  "busy",
-  "normal",
   "free",
   "free",
 ];
@@ -71,6 +75,8 @@ if (come_list[hour - 4] === "free") {
   come_state.innerText = "보통입니다";
 } else if (come_list[hour - 4] === "busy") {
   come_state.innerText = "혼잡합니다";
+} else {
+  come_state.innerText = "끊겼습니다";
 }
 
 const out_state = document.querySelector(".out_state span:last-child");
@@ -82,4 +88,6 @@ if (out_list[hour - 4] === "free") {
   out_state.innerText = "보통입니다";
 } else if (out_list[hour - 4] === "busy") {
   out_state.innerText = "혼잡합니다";
+} else {
+  out_state.innerText = "끊겼습니다";
 }
