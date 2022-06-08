@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 
 const app = express();
 
-const PORT = 3400;
+const port = process.env.PORT || 3400;
 
 app.set("view engine", "html");
 nunjucks.configure("views", {
@@ -18,6 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", indexRouter);
 
 const handleListening = () =>
-  console.log(`✅ Server listenting on port http://localhost:${PORT} 🚀`);
+  console.log(`✅ Server listenting on port http://localhost:${port} 🚀`);
 
-app.listen(PORT, handleListening);
+app.listen(port, handleListening);
