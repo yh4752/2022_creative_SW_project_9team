@@ -67,27 +67,35 @@ let out_list = [
   "free",
 ];
 
-const come_state = document.querySelector(".come_state span:last-child");
+const come_state_div = document.querySelector(".come_state div");
+const come_state = document.querySelector(".come_state div span");
 console.log(come_list[hour - 4]);
 if (come_list[hour - 4] === "free") {
-  come_state.innerText = "여유가 있습니다";
+  come_state.innerText = "여유";
+  come_state_div.style.backgroundColor = "green";
 } else if (come_list[hour - 4] === "normal") {
-  come_state.innerText = "보통입니다";
+  come_state.innerText = "보통";
+  come_state_div.style.backgroundColor = "yellow";
 } else if (come_list[hour - 4] === "busy") {
-  come_state.innerText = "혼잡합니다";
+  come_state.innerText = "혼잡";
+  come_state_div.style.backgroundColor = "red";
 } else {
-  come_state.innerText = "끊겼습니다";
+  come_state.innerText = "끊김";
 }
 
-const out_state = document.querySelector(".out_state span:last-child");
+const out_state_div = document.querySelector(".out_state div");
+const out_state = document.querySelector(".out_state div span");
 console.log(out_list[hour - 4]);
 out_state.innerText = out_list[hour - 4];
 if (out_list[hour - 4] === "free") {
-  out_state.innerText = "여유가 있습니다";
+  out_state.innerText = "여유";
+  out_state_div.style.backgroundColor = "green";
 } else if (out_list[hour - 4] === "normal") {
-  out_state.innerText = "보통입니다";
+  out_state.innerText = "보통";
+  out_state_div.style.backgroundColor = "yellow";
 } else if (out_list[hour - 4] === "busy") {
-  out_state.innerText = "혼잡합니다";
+  out_state.innerText = "혼잡";
+  out_state_div.style.backgroundColor = "red";
 } else {
-  out_state.innerText = "끊겼습니다";
+  out_state.innerText = "끊김";
 }

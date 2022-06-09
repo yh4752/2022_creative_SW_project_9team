@@ -11,13 +11,18 @@ body {
 }
 
 .des p {
-  margin: 5px 0px;
+  margin: 0px;
+  font-size: 12px;
 }
 
 .current_time {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.h1-clock {
+  font-size: 30px;
 }
 
 .sub_state {
@@ -28,5 +33,33 @@ body {
 }
 
 .sub_main section {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.come_state,
+.out_state {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.come_state span,
+.out_state span {
+  font-size: 20px;
+}
+.come_state div,
+.out_state div {
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.come_state div span,
+.out_state div span {
+  font-size: 20px;
 }
