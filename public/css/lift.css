@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 .lift_des {
   display: inline-block;
   display: flex;
@@ -13,10 +18,12 @@
 .lift_main {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-content: center;
   padding: 20px;
 }
 
 .lift_img img {
-  width: 200px;
-  height: 300px;
+  width: 150px;
+  height: 250px;
 }

@@ -10,6 +10,8 @@ body {
   height: 100%;
   overflow: hidden;
   background-color: #d6f4ff;
+
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 header {
@@ -43,7 +45,7 @@ main {
 
 .first section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border: 2px solid black;
 }
@@ -56,43 +58,23 @@ main {
   background-color: #90db7d;
 }
 
-.first .box:last-child {
-  background-color: #009afa;
-}
-
-.second {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
-  padding: 30px 50px;
-}
-
-.second section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-}
-
-.second .box:first-child {
+.first .box:nth-child(3) {
   background-color: #957ca6;
 }
 
-.second .box:last-child {
+.first .box:last-child {
   background-color: #e29e21;
 }
 
-.first a,
-.second a {
+.first a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 140px;
   box-shadow: 1px 1px 1px black;
   border-radius: 10px;
 }
@@ -102,6 +84,8 @@ main {
 }
 
 .box a span {
+  font-size: 18px;
+  font-weight: bold;
   text-align: center;
   color: black;
 }

@@ -1,7 +1,7 @@
 /* 아래 홈 버튼 css */
 footer {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-color: #1c364d;
   position: fixed;
   bottom: 0;
@@ -33,6 +33,6 @@ footer a i {
 }
 
 footer a span {
-  font-size: 13px;
+  font-size: 12px;
   padding-top: 10px;
 }
