@@ -1,11 +1,11 @@
 /* 아래 홈 버튼 css */
 footer {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   background-color: #1c364d;
   position: fixed;
   bottom: 0;
-  right: 50px;
+  right: 30px;
 
   display: flex;
   justify-content: center;
@@ -29,10 +29,10 @@ footer a:hover {
 }
 
 footer a i {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 footer a span {
-  font-size: 12px;
-  padding-top: 10px;
+  font-size: 10px;
+  padding-top: 3px;
 }

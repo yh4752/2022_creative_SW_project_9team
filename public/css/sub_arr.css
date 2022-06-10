@@ -11,15 +11,13 @@ body {
   width: 100%;
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
-
-  margin-top: 40px;
 }
 
 .sub_go {
   width: 100%;
-  height: 120px;
+  height: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,21 +25,22 @@ body {
 }
 
 .sub_go span:first-child {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 
   margin-bottom: 20px;
 }
 
 .sub_go span:last-child {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .sub_arr {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .sub_arr div {
@@ -60,7 +59,7 @@ body {
 }
 .sub_come {
   width: 100%;
-  height: 120px;
+  height: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,16 +67,17 @@ body {
 }
 
 .sub_come span:first-child {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 
   margin-bottom: 20px;
 }
 
 .sub_come span:last-child {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .sub_footer {
-  margin-right: 120px;
+  margin-right: 90px;
 }

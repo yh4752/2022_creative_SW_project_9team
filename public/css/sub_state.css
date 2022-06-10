@@ -26,6 +26,7 @@ body {
 }
 
 .sub_state {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,9 +45,19 @@ body {
   margin-bottom: 10px;
 }
 
+.sub_main article section:first-child {
+  width: 40%;
+}
+.sub_main article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .come_state,
 .out_state {
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
